@@ -10,18 +10,19 @@ public class Printer {
     }
 
     public void append(String textDoc, String nameDoc, int pagesAmount) {
+        this.pagesAmount = pagesAmount;
         queue = queue + "\n" + textDoc + "\n" + nameDoc + "\n" + pagesAmount + " стр" + "\n";
     }
 
     public void append(String textDoc, String nameDoc) {
-        queue = queue + "\n" + textDoc + "\n" + nameDoc + "\n";
+        append(textDoc, nameDoc, 1);
     }
 
-    public void append(String textDoc) {
-        queue = queue + "\n" + textDoc + "\n";
+    public int getPendingPagesCount() {
+        return pagesAmount;
     }
 
-    public int allPagesCountInPrint() {
+    public int getAllPagesInPrint() {
         return pagesAmount;
     }
 
