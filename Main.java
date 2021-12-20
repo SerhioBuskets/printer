@@ -2,17 +2,13 @@ public class Main {
     public static void main(String[] args) {
         Printer printer = new Printer();
         printer.append("здесь текст про широты", "Долгие широты нашей страны", 6);
-        printer.print();
-        int pagesDocOne = printer.getPendingPagesCount();
-        printer.append("тут текст о кулинарии", "Гордон Рамзи: гений или выскочка", 13);
-        printer.print();
-        int pagesDocTwo = printer.getPendingPagesCount();
-        printer.append("тут текст про авто", "Битва гигантов: отечественные против иномарок", 5);
-        printer.print();
-        int pagesDocThree = printer.getPendingPagesCount();
 
-        System.out.println("количество страниц, которые добавлены в принтер, но ещё не распечатаны = "
-                + (pagesDocOne + pagesDocTwo + pagesDocThree));
+
+        //printer.append("тут текст о кулинарии", "Гордон Рамзи: гений или выскочка", 13);
+
+
+       // printer.append("тут текст про авто", "Битва гигантов: отечественные против иномарок", 5);
+        printer.print();
 
 
 
