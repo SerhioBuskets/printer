@@ -12,6 +12,7 @@ public class Printer {
 
     public void append(String textDoc, String nameDoc, int pagesAmount) {
         queue = queue + "\n" + textDoc + "\n" + nameDoc + "\n" + pagesAmount + " стр" + "\n";
+        pagesInThePrintQueue += pagesAmount;
     }
 
     public void append(String textDoc, String nameDoc) {
